@@ -3,3 +3,8 @@ export interface NavButtonProps {
   text: string;
   image: string;
 }
+export interface CardProps {
+    image: string;
+    name: string;
+    description: string;
+}
