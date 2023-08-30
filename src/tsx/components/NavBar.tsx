@@ -10,10 +10,10 @@ export default function NavBar() {
       >
         <img src="/img/logo.png" className="h-14 m-2 rounded-xl" />
         <div className="flex flex-col justify-center align-middle max-w-fit">
-          <p className="text-left m-4 mb-0 text-4xl font-bold bg-gradient-to-r from-gunmetal to-amaranth_pink bg-clip-text text-transparent">
+          <p className="text-left m-4 mb-0 text-4xl font-bold bg-gunmetal bg-clip-text text-transparent">
             Petinder
           </p>
-          <hr className="bg-gradient-to-r from-french_mauve to-amaranth_pink max-w-0 group-hover:max-w-full transition-all duration-500 h-1 border-none rounded-xl mb-4" />
+          <hr className="bg-gradient-to-r from-amaranth_pink-300 to-amaranth_pink max-w-0 group-hover:max-w-full transition-all duration-500 h-1 border-none rounded-xl mb-4" />
         </div>
       </Link>
       <div className="justify-left flex w-2/3 text-lg text-gunmetal">
