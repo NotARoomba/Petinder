@@ -1,5 +1,3 @@
-
-
 export default function Home() {
   return (
     <div className="">
@@ -8,5 +6,5 @@ export default function Home() {
         <p className="text-9xl">Petinder</p>
       </div>
     </div>
-  )
+  );
 }

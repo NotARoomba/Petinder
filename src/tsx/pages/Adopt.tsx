@@ -1,3 +1,3 @@
 export default function Adopt() {
-    return <div></div>
+  return <div></div>;
 }

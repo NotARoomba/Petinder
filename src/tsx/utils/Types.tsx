@@ -1,5 +1,5 @@
 export interface NavButtonProps {
-    route: string;
-    text: string;
-    image: string;
+  route: string;
+  text: string;
+  image: string;
 }

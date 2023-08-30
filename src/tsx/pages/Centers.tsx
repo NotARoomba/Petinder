@@ -1,3 +1,3 @@
 export default function Centers() {
-    return <div></div>
+  return <div></div>;
 }
