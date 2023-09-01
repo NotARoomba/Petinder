@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+
 import "./css/index.css";
 import Home from "./tsx/pages/Home";
 import Adopt from "./tsx/pages/Adopt";
