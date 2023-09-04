@@ -8,3 +8,43 @@ export interface CardProps {
     name: string;
     description: string;
 }
+export enum ThemeState {
+  'dark',
+  'light'
+}
+
+export interface Center {
+  name: string;
+  direction: string;
+  lat: number;
+  long: number;
+}
+
+export interface Pet {
+  name: string;
+  animal: string;
+  color: string;
+  image: string;
+  center: Center;
+  size: string;
+  age: number;
+  hypoallergenic: boolean;
+}
+
+export interface FilterProps {
+  pets: Array<Pet>;
+  setData: (pets: Pet[]) => (void);
+}
+
+export interface FilterDropdownProps {
+  filter: string;
+  options?: Array<Option>;
+  property: keyof Pet;
+  pets: Array<Pet>;
+  setData: (pets: Pet[]) => (void);
+}
+
+export interface Option {
+  label: string;
+  value: number | Array<number> | string;
+}

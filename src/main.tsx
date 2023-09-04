@@ -10,6 +10,7 @@ import Error from "./tsx/pages/Error";
 import Centers from "./tsx/pages/Centers";
 import WeAdopt from "./tsx/pages/WeAdopt";
 import NavBar from "./tsx/components/NavBar";
+import BottomBar from "./tsx/components/Bottombar";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         />
         <Route path="*" element={<Error />} />
       </Routes>
+      <BottomBar />
     </BrowserRouter>
   </React.StrictMode>,
 );
