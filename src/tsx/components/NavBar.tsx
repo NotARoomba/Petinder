@@ -42,7 +42,7 @@ export default function NavBar() {
     }
   }
   return (
-    <div className="flex w-screen shadow-lg dark:bg-gunmetal-300">
+    <div className="flex w-screen shadow-lg h-20 dark:bg-gunmetal-300">
       <Link
         to="/"
         className="group justify-left flex w-1/3 align-middle transition"
@@ -52,7 +52,7 @@ export default function NavBar() {
           <p className="text-left m-4 mb-0 text-4xl font-bold bg-gunmetal dark:bg-gradient-to-r from-hot_pink to-baker-miller_pink bg-clip-text text-transparent">
             Petinder
           </p>
-          <hr className="bg-gradient-to-r from-hot_pink to-baker-miller_pink max-w-0 group-hover:max-w-full transition-all duration-500 h-1 border-none rounded-xl mb-4" />
+          <hr className="bg-gradient-to-r from-hot_pink to-baker-miller_pink dark:from-gunmetal-300 dark:to-hot_pink max-w-0 group-hover:max-w-full transition-all duration-500 h-1 border-none rounded-xl mb-4" />
         </div>
       </Link>
       <div className="justify-left flex w-1/3 text-lg text-gunmetal">
