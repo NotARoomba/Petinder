@@ -7,18 +7,18 @@ import { centersRouter } from "./routers/centers.router";
 const app = express();
 const port = 3001;
 
-export const corsOptions: CorsOptions = {
-  origin: [
-    "https://petinder.notaroomba.xyz",
-    "http://petinder.notaroomba.xyz",
-    "http://localhost:5173",
-    "http://localhost",
-  ],
-};
+// const corsOptions: CorsOptions = {
+//   origin: [
+//     "https://petinder.notaroomba.xyz",
+//     "http://petinder.notaroomba.xyz",
+//     "http://localhost:5173",
+//     "http://localhost",
+//   ],
+// };
 
 connectToDatabase()
   .then(() => {
-    app.use(cors(corsOptions));
+    // app.use(cors(corsOptions));
     app.use(express.json());
     app.use("/animals", animalsRouter);
     app.use("/centers", centersRouter);
