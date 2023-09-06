@@ -5,7 +5,7 @@ export async function callAPI(
   ) {
     return method === 'POST'
       ? await (
-          await fetch('https://foropec2023-api.notaroomba.xyz' + endpoint, {
+          await fetch('https://petinder-api.notaroomba.xyz' + endpoint, {
             method: method,
             headers: {
               Accept: 'application/json',
@@ -15,7 +15,7 @@ export async function callAPI(
           })
         ).json()
       : await (
-          await fetch('https://foropec2023-api.notaroomba.xyz' + endpoint, {
+          await fetch('https://petinder-api.notaroomba.xyz' + endpoint, {
             method: method,
             headers: {
               Accept: 'application/json',
