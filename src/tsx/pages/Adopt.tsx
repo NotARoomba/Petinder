@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Select, { MultiValue } from 'react-select'
 import { Pet } from "../utils/Types";
-import { DATA } from "../utils/Data";
 import Card from "../components/Card";
+import { callAPI } from "../utils/Functions";
 
 export default function Adopt() {
   // data is all the real data
@@ -11,9 +11,15 @@ export default function Adopt() {
   const [showing, setShowing] = useState<Array<Pet>>([])
   useEffect(() => {
     //fetch data from api
-    const d = DATA()
-    setData(d)
-    setShowing(d)
+      async function updateData() {
+        const {animals} = await callAPI(
+          '/animals/',
+          'GET', {}
+        );
+        setData(animals)
+        setShowing(animals)
+      }
+      updateData();
   }, [])
   const updateFilter = (filters: MultiValue<{value: string, label: string}>) => {
     console.log(filters)
