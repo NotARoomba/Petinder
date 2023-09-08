@@ -9,8 +9,8 @@ export interface CardProps {
     description: string;
 }
 export enum ThemeState {
-  'dark',
-  'light'
+  DARK='dark',
+  LIGHT='light'
 }
 
 export interface Center {
@@ -47,4 +47,9 @@ export interface FilterDropdownProps {
 export interface Option {
   label: string;
   value: number | Array<number> | string;
+}
+
+export interface ThemeButtonProps {
+  theme: ThemeState;
+  changeTheme: () => void;
 }
