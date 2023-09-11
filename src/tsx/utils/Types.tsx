@@ -53,3 +53,10 @@ export interface ThemeButtonProps {
   theme: ThemeState;
   changeTheme: () => void;
 }
+
+export interface MarkerProps {
+  lat: number;
+  lng: number;
+  text: string;
+  opacity: number;
+}

@@ -24,9 +24,7 @@ export default function Adopt() {
       updateData();
   }, [])
   const updateFilter = (filters: MultiValue<{value: string, label: string}>) => {
-    console.log(filters)
     setShowing(data)
-    console.log(showing)
     for (const filter of filters) {
       setShowing(showing.filter(v => v.color === filter.value || v.animal === filter.value || v.size === filter.value))
     }
