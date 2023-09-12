@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function BottomBar() {
     return <div className="shadow-inner dark:bg-gunmetal-200 dark:text-gunmetal-900 h-32 flex justify-around pt-2 text-center text-md xl:text-xl">
     <div className="flex flex-col">
-      <p className="font-bold ">Contactarnos</p>
+      <p className="font-bold ">Contáctenos</p>
       <Link className="underline" to='mailto:petinder.col@gmail.com'>Email</Link>
       <Link to='tel:+573012668699' className="underline">+57 301-266-8699</Link>
     </div>
