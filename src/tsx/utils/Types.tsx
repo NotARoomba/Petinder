@@ -4,18 +4,19 @@ export interface NavButtonProps {
   image: string;
 }
 export interface CardProps {
-    image: string;
-    name: string;
-    description: string;
+  image: string;
+  name: string;
+  description: string;
 }
 export enum ThemeState {
-  DARK='dark',
-  LIGHT='light'
+  DARK = "dark",
+  LIGHT = "light",
 }
 
 export interface Center {
   name: string;
-  direction: string;
+  website: string;
+  image: string;
   lat: number;
   long: number;
 }
@@ -33,7 +34,7 @@ export interface Pet {
 
 export interface FilterProps {
   pets: Array<Pet>;
-  setData: (pets: Pet[]) => (void);
+  setData: (pets: Pet[]) => void;
 }
 
 export interface FilterDropdownProps {
@@ -41,7 +42,7 @@ export interface FilterDropdownProps {
   options?: Array<Option>;
   property: keyof Pet;
   pets: Array<Pet>;
-  setData: (pets: Pet[]) => (void);
+  setData: (pets: Pet[]) => void;
 }
 
 export interface Option {
@@ -57,6 +58,11 @@ export interface ThemeButtonProps {
 export interface MarkerProps {
   lat: number;
   lng: number;
-  text: string;
+  center: Center;
   opacity: number;
+  show: boolean;
+}
+
+export interface MarkerInfoProps {
+  center: Center;
 }

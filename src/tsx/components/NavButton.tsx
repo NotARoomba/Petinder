@@ -13,7 +13,10 @@ export default function NavButton({ route, text, image }: NavButtonProps) {
           : "bg-neutral-200 dark:bg-gunmetal-500")
       }
     >
-      <img className="h-8 mr-2 dark:invert contrast-200 dark:filter pl-5" src={image}></img>
+      <img
+        className="h-8 mr-2 dark:invert contrast-200 dark:filter pl-5"
+        src={image}
+      ></img>
       <p className="align-middle h-full pr-5">{text}</p>
     </Link>
   );

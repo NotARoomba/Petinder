@@ -9,3 +9,13 @@ html {
 body {
   height: 100%;
 }
+
+.marker {
+  filter: invert(70%) sepia(37%) saturate(5321%) hue-rotate(291deg)
+    brightness(103%) contrast(101%);
+  transition: all 1000ms ease;
+}
+.marker:hover {
+  filter: invert(29%) sepia(48%) saturate(5547%) hue-rotate(306deg)
+    brightness(100%) contrast(103%);
+}
