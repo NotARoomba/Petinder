@@ -18,10 +18,7 @@ export default function Home() {
           <div className="inline text-center md:text-left align-middle items-center mx-10">
             <p className="text-6xl font-semibold mb-5">¿Quienes Somos?</p>
             <p className="text-2xl max-w-xl">
-              Somos una fundacion comprometida con la noble causa de reunir a
-              las personas con sus leales compañeros peludos perdidos, y de
-              darles una segunda oportunidad a las almas indefensas que han
-              sufrido el flagelo del maltrato.{" "}
+              Somos una fundación comprometida con la noble causa de reunir a personas con sus leales compañeros peludos perdidos, y de darles una segunda oportunidad a las almas indefensas que han sufrido el flagelo del maltrato.{" "}
             </p>
           </div>
         </div>
@@ -30,9 +27,7 @@ export default function Home() {
           <div className="inline text-center md:text-left align-middle items-center mx-10">
             <p className="text-6xl font-semibold mb-5">Nuestro Misión</p>
             <p className="text-2xl max-w-xl">
-              Nuestro misión trasciende más allá de las fronteras digitales, ya
-              que también establezco vínculos con refugios y organizaciones
-              dedicadas al bienestar animal en la región caribeña.
+              Nuestra misión trasciende más allá de las fronteras digitales, ya que también establecemos vínculos con refugios y organizaciones dedicadas al bienestar animal en la región caribeña.
             </p>
           </div>
           <img
