@@ -2,14 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html,body {
   font: Inter;
   height: 100%;
 }
-body {
-  height: 100%;
-}
-
 .marker {
   filter: invert(70%) sepia(37%) saturate(5321%) hue-rotate(291deg)
     brightness(103%) contrast(101%);
