@@ -25,7 +25,7 @@ export default function Home() {
 
         <div className="justify-end flex md:flex-row flex-col-reverse items-center mt-24">
           <div className="inline text-center md:text-left align-middle items-center mx-10">
-            <p className="text-6xl font-semibold mb-5">Nuestro Misión</p>
+            <p className="text-6xl font-semibold mb-5">Nuestra Misión</p>
             <p className="text-2xl max-w-xl">
               Nuestra misión trasciende más allá de las fronteras digitales, ya que también establecemos vínculos con refugios y organizaciones dedicadas al bienestar animal en la región caribeña.
             </p>
