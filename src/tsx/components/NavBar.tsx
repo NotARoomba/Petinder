@@ -78,7 +78,7 @@ export default function NavBar() {
         <span className={"bg-gunmetal dark:bg-gunmetal-900 w-10 block h-1 rounded my-auto duration-300" + (menu ? " rotate-45 -translate-y-[13px]" : " rotate-0")}></span>
       </div>
       </div>
-      <div onClick={() => setMenu(false)} className={" bg-white/80 dark:bg-gunmetal-500/80 w-screen absolute h-fit top-20 z-10 justify-center transition duration-300 flex flex-wrap" + (menu?' opacity-100' : ' opacity-0')}>
+      <div onClick={() => setMenu(false)} className={" bg-white/80 dark:bg-gunmetal-500/80 w-screen absolute h-fit top-20 z-10 justify-center transition duration-300 flex flex-wrap" + (menu?' animate-show' : ' animate-hide hidden')}>
         <NavButton route="/adopta" text="Adopta" image="/img/dog.png" />
         <NavButton route="/centros" text="Centros" image="/img/dog-house.png" />
         <NavButton

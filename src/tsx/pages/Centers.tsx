@@ -31,11 +31,11 @@ export default function Centers() {
   }, [])
   return <div className="min-h-[calc(100vh-208px)] dark:bg-gunmetal-300 dark:text-gunmetal-900 text-gunmetal pt-2 mb-auto ">
     <p className="text-center text-7xl my-3 mb-8 font-bold">Centros</p>
-    <div className='w-10/12 h-[60vh] justify-center mx-auto'>
+    <div className='w-10/12 h-[55vh] xl:h-[60vh] justify-center mx-auto'>
 
     {theme && <GoogleMapReact bootstrapURLKeys={{ key: "AIzaSyA1ZMdrjnYTEZKi7_7rzQhYn53EMKmcNVk" }} center={{
-      lat: 4.5709,
-      lng: -74.2973
+      lat: 8.800433,
+      lng: -74.737480
     }} zoom={6}  onDrag={() => setOpacity(0)} onDragEnd={() => {setOpacity(1); updateTheme()}} options={{ styles: theme==ThemeState.LIGHT? [] : DarkTheme }}>
       {data.map((v, i) => <Marker opacity={opacity} key={i} lat={v.lat} lng={v.long} text={v.name}/>)}
       </GoogleMapReact>}

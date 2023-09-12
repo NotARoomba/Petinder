@@ -19,12 +19,22 @@ export default {
           '50%': { backgroundPosition: '100% 50%' },
           '100%': { backgroundPosition: '0% 50%' },
         },
+        show: {
+          '0%': { opacity: '0', visibility: 'visible'},
+          '100%': { opacity: '100'},
+        },
+        hide: {
+          '0%': { opacity: '100'},
+          '100%': { opacity: '0', display: 'none'},
+        },
       },
       backgroundSize: {
         '300%': '300%',
       },
       animation: {
         gradient: 'animatedgradient 6s ease infinite alternate',
+        show: 'show 300ms ease forwards',
+        hide: 'hide 300ms ease forwards',
       },
     },
   },
