@@ -9,8 +9,8 @@ const port = 3001;
 
 const corsOptions: CorsOptions = {
   origin: [
-    "https://petinder.notaroomba.xyz",
-    "http://petinder.notaroomba.xyz",
+    "https://petinder.notaroomba.dev",
+    "http://petinder.notaroomba.dev",
     "http://localhost:5173",
     "http://localhost",
   ],

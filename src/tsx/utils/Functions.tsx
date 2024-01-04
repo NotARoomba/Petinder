@@ -1,7 +1,7 @@
 export async function callAPI(endpoint: string, method: string, body: object) {
   return method === "POST"
     ? await (
-        await fetch("https://petinder-api.notaroomba.xyz" + endpoint, {
+        await fetch("https://petinder-api.notaroomba.dev" + endpoint, {
           method: method,
           headers: {
             Accept: "application/json",
@@ -11,7 +11,7 @@ export async function callAPI(endpoint: string, method: string, body: object) {
         })
       ).json()
     : await (
-        await fetch("https://petinder-api.notaroomba.xyz" + endpoint, {
+        await fetch("https://petinder-api.notaroomba.dev" + endpoint, {
           method: method,
           headers: {
             Accept: "application/json",
