@@ -28,6 +28,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       </Routes>
       <BottomBar />
     </BrowserRouter>
-    ,
   </React.StrictMode>,
 );
